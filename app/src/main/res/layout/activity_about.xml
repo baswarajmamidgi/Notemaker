@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baswarajmamidgi.notemaker.About">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+
+    <TextView
+        android:text="Notes maker lite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="normal|bold|italic"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="Baswaraj mamidgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Developed by"
+        android:layout_width="2000dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView8"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Email:baswarajmamidgi10@gmail.com"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark"
+        android:autoLink="email"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_marginTop="14dp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:text="VNR VJIET HYDERABAD"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:text="Features"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="58dp"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:text="@string/_1_add_daily_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:text="2.Share notes by long click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>

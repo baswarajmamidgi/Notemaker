@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Notes maker lite</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="about">About</string>
+    <string name="newest_first">Newest First</string>
+    <string name="oldest_first">Oldest First</string>
+    <string name="search">Search</string>
+    <string name="sort_order">sort order</string>
+    <string name="delete">delete</string>
+    <string name="update">update</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="searchable">searchable</string>
+    <string name="_1_add_daily_alarm">1.Add daily alarm</string>
+</resources>

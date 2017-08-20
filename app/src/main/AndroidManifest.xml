@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baswarajmamidgi.notemaker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.baswarajmamidgi.notemaker.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <provider
+            android:name="com.baswarajmamidgi.notemaker.contentprovider"
+            android:authorities="com.baswarajmamidgi.Notesmakerlite.contentprovider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.baswarajmamidgi.notemaker.Dataloader"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.baswarajmamidgi.notemaker.About"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.baswarajmamidgi.notemaker.Setalarm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.baswarajmamidgi.notemaker.Viewdetails"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.baswarajmamidgi.notemaker.notificationreceiver"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.baswarajmamidgi.notemaker.preference"
+            android:label="Settings" />
+        <activity android:name="com.baswarajmamidgi.notemaker.splashscreen"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>
